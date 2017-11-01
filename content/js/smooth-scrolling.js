@@ -1,7 +1,7 @@
 function smoothScrolling() {
   //Smooth automated Scrolling
   var scrollLinks = $('.scroll');
-  var diferencaNavbar = $('#myNavbar').height(); console.log(diferencaNavbar);
+  var diferencaNavbar = $('#myNavbar').height();
 
   scrollLinks.on('click', function(e) {
     e.preventDefault();
@@ -29,3 +29,5 @@ function smoothScrolling() {
   })
 
 }
+
+//Thanks to Kevin Powell for sharing the knowledge used to 'build' this script (https://www.youtube.com/watch?v=x0YnVwAuNQI)
