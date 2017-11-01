@@ -17,7 +17,7 @@ function smoothScrolling() {
 
     scrollLinks.each(function() {
       var sectionOffset = $(this.hash).offset().top - 20;//gets every section height
-      
+
       if (sectionOffset <= scrollbarLocation) { //if height of browser is greater, it is the active link
         $(this).parent().addClass('active');
         $(this).parent().siblings().removeClass('active');

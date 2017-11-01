@@ -24,6 +24,10 @@ body {
   font-family: 'Pacifico', cursive;
 }
 
+.nav-item,.nav-item.active,.nav-link {
+  background-color: inherit !important;
+}
+
 .hero {
   padding: 20vh 0;
   background: linear-gradient(to right, var(--secondary), var(--accent));
