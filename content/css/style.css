@@ -2,18 +2,14 @@
 	--accent: #00acc1;
 	--secondary: #81c784;
 	--dark: #222;
-	--medium-dark: lighten(var(--dark), 25%);
-}
-
-@mixin section-padding {
-  padding: 10vh 0;
-  @media (min-width: 768px) { // I'd prefer this to be the $md Bootstrap grid variable
-    padding: 20vh 0;
-  }
+	--medium-dark: #ccc;
+	--plano-fundo: linear-gradient(to right, var(--secondary), var(--accent));
 }
 
 body {
+	font-family: 'Saira', sans-serif;
   padding-top: 3rem;
+	background: var(--plano-fundo);
 }
 
 .impact-phrase{
@@ -26,30 +22,46 @@ body {
 
 .nav-item,.nav-item.active,.nav-link {
   background-color: inherit !important;
+	font-weight: bold;
 }
 
 .hero {
   padding: 20vh 0;
-  background: linear-gradient(to right, var(--secondary), var(--accent));
+  background: var(--plano-fundo);
   height: 500px;
 }
 
-.features {
-  @include section-padding;
+.work {
   background: var(--dark);
   color: white;
-  height: 500px;
+  height: 800px;
 }
 
-.pricing {
-  @include section-padding;
-  text-align: center;
-  height: 500px;
+.job{
+	color: var(--dark);
+	padding: 10px;
+	font-family: 'Saira', sans-serif;
+	margin-top: 40px;
+	background: white;
+	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
 }
 
-.featured-price {
-  transform: scale(1.1);
-  z-index: 10;
-  background: var(--dark);
-  height: 500px;
+.jobs-container{
+	margin-left: 10%;
+}
+
+.academia {
+  background: var(--medium-dark);
+  height: 800px;
+}
+
+.personal {
+	background: var(--plano-fundo);
+  height: 800px;
+}
+
+.contact {
+	padding: 20vh 0;
+	background: var(--plano-fundo);
+	height: 400px;
 }

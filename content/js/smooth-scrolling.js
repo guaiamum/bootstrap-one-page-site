@@ -5,7 +5,7 @@ function smoothScrolling() {
 
   scrollLinks.on('click', function(e) {
     e.preventDefault();
-    
+
     $('body,html').animate({
       scrollTop: $(this.hash).offset().top - diferencaNavbar
     }, 1000);
