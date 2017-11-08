@@ -23,8 +23,11 @@ function populateJobs(){
     var datas = $('<p>',{ html: calendar + e.dateBegin +' - '+ e.dateEnd });
     var map = '<i class="fa fa-map-marker" aria-hidden="true"></i> ';
     var location = $('<p>',{ html: map + e.location });
+    var description = $('<p>',{ html: e.description });
+    var tasks =  $('<ul>');
+    e.tasks.forEach((task) => {var currTask = $('<li>',{ html: task }); tasks.append(currTask);});
 
-    container.append(company,subtitle,datas,location);
+    container.append(company,subtitle,datas,location,description, tasks);
     $('#jobs').append(container);
   });
 

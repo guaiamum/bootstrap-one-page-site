@@ -12,6 +12,10 @@ body {
 	background: var(--plano-fundo);
 }
 
+p,li{
+	font-size: 12pt;
+}
+
 .impact-phrase{
   font-family: 'Inconsolata', monospace;
 }
