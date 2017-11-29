@@ -1,16 +1,4 @@
 var jobs = [];
-
-var open = {
-  company: 'Open System',
-  subtitle: 'Software development internship',
-  dateBegin: 'Jun 2017',
-  dateEnd: 'ongoing',
-  location: 'Salvador, BA',
-  description: 'Open System is a serious company that has 20 years in the market providing integrated mobile solutions for big retail companies.',
-  tasks: ['Initial development of big international, multi-language web-system, with mobile interface (C# Asp.Net MVC5 Xamarin SQLServer)']
-};
-jobs.push(open);
-
 function populateJobs(){
 
   jobs.forEach((e) => {
@@ -32,3 +20,25 @@ function populateJobs(){
   });
 
 }
+
+var open = {
+  company: 'Open System',
+  subtitle: 'Software development internship',
+  dateBegin: 'Jun 2017',
+  dateEnd: 'ongoing',
+  location: 'Salvador, BA',
+  description: 'Open System is a serious company that has 20 years in the market providing integrated mobile solutions for big retail companies.',
+  tasks: ['Initial development of big international, multi-language web-system, with mobile interface (C# Asp.Net MVC5 Xamarin SQLServer)']
+};
+jobs.push(open);
+
+var viva = {
+  company: 'Viva inovação',
+  subtitle: 'Software development internship',
+  dateBegin: 'Mar 2017',
+  dateEnd: 'Jun 2017',
+  location: 'Salvador, BA',
+  description: 'Viva Inovação is a startup company that develops technology solutions focused on increasing productivity.',
+  tasks: ['Great progress in a major project inside the company (C# Asp.Net MVC5 SQLServer)','Maintenance in PHP Yii framework project (MySQL PhpMyAdmin)']
+};
+jobs.push(viva);
