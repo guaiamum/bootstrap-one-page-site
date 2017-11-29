@@ -1,6 +1,7 @@
 var jobs = [];
 
 var open = {
+  id: '1',
   company: 'Open System',
   subtitle: 'Software development internship',
   dateBegin: 'Jun 2017',
@@ -15,7 +16,7 @@ function populateJobs(){
 
   jobs.forEach((e) => {
     //console.log(e.company);
-    var container = $('<div>',{ class: 'job' });
+    var container = $('<div>',{ class: 'job', id: e.id});
 
     var company = $('<h3>',{ html: e.company });
     var subtitle = $('<h4>',{ html: e.subtitle });
@@ -29,6 +30,7 @@ function populateJobs(){
 
     container.append(company,subtitle,datas,location,description, tasks);
     $('#jobs').append(container);
+    //container.animate({left: '250px'});
   });
 
 }

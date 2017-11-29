@@ -46,8 +46,10 @@ p,li{
 	padding: 10px;
 	font-family: 'Saira', sans-serif;
 	margin-top: 40px;
-	background: white;
+	background: #ccc;
 	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+	position: relative;
+	display: none;
 }
 
 .jobs-container{
