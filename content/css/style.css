@@ -38,7 +38,7 @@ p,li{
 .work {
   background: var(--dark);
   color: white;
-  height: 800px;
+  padding-bottom: 20px;
 }
 
 .job{
@@ -70,4 +70,10 @@ p,li{
 	padding: 20vh 0;
 	background: var(--plano-fundo);
 	height: 400px;
+}
+
+.icon-love {
+	align: center;
+	width: 200px;
+	height: 200px;
 }
