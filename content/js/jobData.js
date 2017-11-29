@@ -42,3 +42,14 @@ var viva = {
   tasks: ['Great progress in a major project inside the company (C# Asp.Net MVC5 SQLServer)','Maintenance in PHP Yii framework project (MySQL PhpMyAdmin)']
 };
 jobs.push(viva);
+
+var maquete = {
+  company: 'Viva inovação',
+  subtitle: 'Game development internship',
+  dateBegin: 'Mar 2016',
+  dateEnd: 'Mar 2017',
+  location: 'Salvador, BA',
+  description: 'Multi-subject Federal University project',
+  tasks: ['From ground zero made an entire virtual world of my University Campus, including terrain, buildings, streets and main architecture characteristics','Participants from different areas of knowledge, like: arts, architecture, computer science']
+};
+jobs.push(maquete);
