@@ -4,6 +4,9 @@ var diferencaNavbar;
 function smoothScrolling() {
   scrollLinks = $('.scroll');
   diferencaNavbar = $('#myNavbar').height();
+  
+  //First Run
+  onScroll();
 
   /* Scroll smoothly to section after click */
   scrollLinks.on('click', function(e) {
@@ -29,7 +32,7 @@ var onScroll = function() {
     var idSection = $(this.hash).attr('id'); //section ID
     
     if (sectionOffset < scrollbarLocation + 1) { //if height of browser is greater, it is the active link
-      $(this).parent().siblings().removeClass('active');
+      scrollLinks.parent().siblings().removeClass('active');
       $(this).parent().addClass('active');
     }
   })
