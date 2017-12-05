@@ -3,7 +3,7 @@ function populateJobs(){
 
   jobs.forEach((e) => {
     //console.log(e.company);
-    var container = $('<div>',{ class: 'job', id: e.id});
+    var container = $('<div>',{ class: 'job animated slideInRight', id: e.id});
 
     var company = $('<h3>',{ html: e.company });
     var subtitle = $('<h4>',{ html: e.subtitle });

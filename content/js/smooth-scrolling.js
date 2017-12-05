@@ -1,8 +1,11 @@
-function smoothScrolling() {
-  //Smooth automated Scrolling
-  var scrollLinks = $('.scroll');
-  var diferencaNavbar = $('#myNavbar').height();
+var scrollLinks;
+var diferencaNavbar;
 
+function smoothScrolling() {
+  scrollLinks = $('.scroll');
+  diferencaNavbar = $('#myNavbar').height();
+
+  /* Scroll smoothly to section after click */
   scrollLinks.on('click', function(e) {
     e.preventDefault();
 
@@ -12,22 +15,36 @@ function smoothScrolling() {
 
   });
 
-  //Active link change
-  $(window).on('scroll', function() {
-    var scrollbarLocation = $(this).scrollTop() + diferencaNavbar; //height on the top of the web browser
-
-    scrollLinks.each(function() {
-      var sectionOffset = $(this.hash).offset().top;//gets every section height
-
-      if (sectionOffset < scrollbarLocation + 1) { //if height of browser is greater, it is the active link
-        //console.log(sectionOffset,scrollbarLocation);
-        $(this).parent().addClass('active');
-        $(this).parent().siblings().removeClass('active');
-      }
-    })
-
-  })
-
+  $(window).on('scroll', () => { onScroll(); });
+  
 }
 
-//Thanks to Kevin Powell for sharing the knowledge used to 'build' this script (https://www.youtube.com/watch?v=x0YnVwAuNQI)
+/* Animate link on scroll */
+var onScroll = function() {
+  var scrollbarLocation = $(this).scrollTop() + diferencaNavbar; //height on the top of the browser, below the navbar
+
+  //for each link, verify if the height belongs to the corresponding section
+  scrollLinks.each(function() {
+    var sectionOffset = $(this.hash).offset().top; //gets every section height
+    var idSection = $(this.hash).attr('id'); //section ID
+    
+    if (sectionOffset < scrollbarLocation + 1) { //if height of browser is greater, it is the active link
+      $(this).parent().siblings().removeClass('active');
+      $(this).parent().addClass('active');
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Thanks to Kevin Powell for sharing the knowledge used to 'craft' this script (https://www.youtube.com/watch?v=x0YnVwAuNQI)

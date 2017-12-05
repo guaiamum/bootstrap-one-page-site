@@ -12,12 +12,18 @@ body {
 	background: var(--plano-fundo);
 }
 
+.fadeInLoad {
+	/* slower animations */
+	-webkit-animation-duration: 4s;
+	-webkit-animation-delay: 0.5s;
+}
+
 p,li{
 	font-size: 12pt;
 }
 
 .impact-phrase{
-  font-family: 'Inconsolata', monospace;
+	font-family: 'Inconsolata', monospace;
 }
 
 .navbar-brand {
