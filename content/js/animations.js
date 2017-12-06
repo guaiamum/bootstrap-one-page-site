@@ -1,5 +1,5 @@
-function InitialAnimations(){
-    $('a,h1,.impact-phrase').animateCss('fadeIn fadeInLoad');
+function InitialAnimations() {
+  $('a,h1,.impact-phrase').animateCss('fadeIn fadeInLoad');
 }
 
 $.fn.extend({

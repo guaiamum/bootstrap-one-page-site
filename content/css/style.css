@@ -38,7 +38,7 @@ p,li{
 .hero {
   padding: 20vh 0;
   background: var(--plano-fundo);
-  height: 500px;
+  height: 100vh;
 }
 
 .work {
