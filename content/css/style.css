@@ -15,15 +15,19 @@ body {
 	/*background: var(--plano-fundo);*/
 }
 
+p,li {
+	font-size: 12pt;
+}
+
+a {
+	color: var(--dark);
+}
 .fadeInLoad {
 	/* slower animations */
 	-webkit-animation-duration: 4s;
 	-webkit-animation-delay: 0.5s;
 }
 
-p,li{
-	font-size: 12pt;
-}
 
 .impact-phrase{
 	font-family: 'Inconsolata', monospace;
@@ -75,6 +79,7 @@ p,li{
 }
 
 .contact {
+	color: var(--dark);
 	padding: 20vh 0;
 	height: 800px;
 }
