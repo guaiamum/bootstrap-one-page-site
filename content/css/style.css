@@ -2,6 +2,8 @@
 	--accent: #00acc1;
 	--secondary: #81c784;
 	--dark: #222;
+	--dark-alpha: rgba(34,34,34,0.6);
+	--white-alpha: rgba(255,255,255,0.6);
 	--medium-dark: #ccc;
 	--plano-fundo: linear-gradient(to right, var(--secondary), var(--accent));
 }
@@ -9,7 +11,8 @@
 body {
 	font-family: 'Saira', sans-serif;
   padding-top: 3rem;
-	background: var(--plano-fundo);
+	background: url("../image/background.jpg");
+	/*background: var(--plano-fundo);*/
 }
 
 .fadeInLoad {
@@ -24,6 +27,7 @@ p,li{
 
 .impact-phrase{
 	font-family: 'Inconsolata', monospace;
+	/*color: #fff !important;*/
 }
 
 .navbar-brand {
@@ -37,25 +41,24 @@ p,li{
 
 .hero {
   padding: 20vh 0;
-  background: var(--plano-fundo);
   height: 100vh;
 }
 
 .work {
-  background: var(--dark);
-  color: white;
+  background: var(--white-alpha);
+  color: var(--dark);
   padding-bottom: 20px;
 }
 
 .job{
 	color: var(--dark);
-	padding: 10px;
 	font-family: 'Saira', sans-serif;
+	background: snow;
+	border-radius: 5px;
+	padding: 10px;
 	margin-top: 40px;
-	background: #FFF;
-	box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+	box-shadow: 0 4px 8px 0 var(--dark), 0 6px 20px 0 var(--dark);
 	position: relative;
-	/*display: none;*/
 }
 
 .jobs-container{
@@ -63,19 +66,17 @@ p,li{
 }
 
 .academia {
-  background: var(--medium-dark);
   height: 800px;
 }
 
 .personal {
-	background: var(--plano-fundo);
-  height: 800px;
+	padding-bottom: 20px;
+	background: var(--white-alpha);
 }
 
 .contact {
 	padding: 20vh 0;
-	background: var(--plano-fundo);
-	height: 400px;
+	height: 800px;
 }
 
 .icon-love {
